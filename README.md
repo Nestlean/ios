@@ -1,6 +1,5 @@
 # NestleanSDK
 
-[![CI Status](http://img.shields.io/travis/Andrew Shapovalov/NestleanSDK.svg?style=flat)](https://travis-ci.org/Andrew Shapovalov/NestleanSDK)
 [![Version](https://img.shields.io/cocoapods/v/NestleanSDK.svg?style=flat)](http://cocoapods.org/pods/NestleanSDK)
 [![License](https://img.shields.io/cocoapods/l/NestleanSDK.svg?style=flat)](http://cocoapods.org/pods/NestleanSDK)
 [![Platform](https://img.shields.io/cocoapods/p/NestleanSDK.svg?style=flat)](http://cocoapods.org/pods/NestleanSDK)
