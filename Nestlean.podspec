@@ -9,9 +9,9 @@
 Pod::Spec.new do |s|
   s.name                    = "Nestlean"
   s.version                 = "1.1.0"
-  s.summary                 = "Nestlean is a web based platform that covers the mobile app development lifecycle from Sandbox to Production"
+  s.summary                 = "This SDK has been created to help iOS engineers to develop, distribute and test their apps"
   s.description             = <<-DESC
-                  This SDK has been created to help iOS engineers to develop, distribute and test their apps.
+                  Nestlean is a web based platform that covers the mobile app development lifecycle from Sandbox to Production
                    DESC
   s.homepage                = "https://nestlean.com"
   s.license                 = { :type => "Commercial", :file => "LICENSE" }
