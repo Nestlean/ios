@@ -50,6 +50,24 @@ pod "Nestlean"
 
  	` [Nestlean initWithApplicationKey: @”sdk_token”] `
 
+### Methods
+
+1. Custom Events track specific actions that users take within your app *[example: making a purchase, playing a video, or taking any possible app action]*. In order to track custom events, you need to call the method: 
+
+	`[Nestlean event: @”event_name”];`
+
+2. The second level in the Custom Event structure is the Event parameter *[example: user is registered or anonymous]*, see below an example:    
+
+	`[Nestlean event: @”event_name” data: @{“key”:@"value"}];`
+
+3. Feedback Screen is used to save and track user feedback. To integrate Feedback Screen you need to call the method: 
+
+	`[Nestlean showFeedbackView];`
+
+4. By default all the screens that our SDK can parse are being submitted automatically. If you have a custom screen that we cannot track automatiicaly, you can easily add the screen manually, just follow the method below: 
+
+	`[Nestlean screen: @“screen_name”];`
+
 ### Author
 
 Alex Bulgakov, alex@nestlean.com
