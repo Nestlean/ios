@@ -35,18 +35,20 @@ pod "Nestlean"
 
 5. Add these keys in your info.plist file. (Related to the App Transport Security as of ios 9.0) They specify the exceptions needed for each domain so your app can successfully load the images for rewards
 
-```
-<key>NSAppTransportSecurity</key>
-<dict> 
-  <key>NSAllowsArbitraryLoads</key> <true/>
-</dict>
-```
+	```
+	<key>NSAppTransportSecurity</key>
+	<dict> 
+  		<key>NSAllowsArbitraryLoads</key> <true/>
+	</dict>
+	```
 
-6. Import Nestlean header file in every place where you are going to use it. **#import “Nestlean.h”**
+6. Import Nestlean header file in every place where you are going to use it. 
+ 
+	` #import “Nestlean.h” `
 
 7. Initialize Nestlean sdk in you AppDelegate's method **application:didFinishLaunchingWithOptions:**
 
- ` [Nestlean initWithApplicationKey: @”sdk_token”] `
+ 	` [Nestlean initWithApplicationKey: @”sdk_token”] `
 
 ### Author
 
