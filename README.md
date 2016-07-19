@@ -1,12 +1,12 @@
-# NestleanSDK
+# Nestlean SDK v1.1.0
 
 [![Version](https://img.shields.io/cocoapods/v/Nestlean.svg?style=flat)](http://cocoapods.org/pods/Nestlean)
 [![License](https://img.shields.io/cocoapods/l/Nestlean.svg?style=flat)](http://cocoapods.org/pods/Nestlean)
 [![Platform](https://img.shields.io/cocoapods/p/Nestlean.svg?style=flat)](http://cocoapods.org/pods/Nestlean)
 
-## Installation
+### CocoaPods Integration
 
-Nestlean is available through [CocoaPods](http://cocoapods.org). To install
+Nestlean is available through [CocoaPods](http://cocoapods.org/pods/Nestlean). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
@@ -14,48 +14,40 @@ pod "Nestlean"
 ```
 
 
-## Usage
-1. In your project's "Build Settings" add -ObjC flag in section "Other Linker Flags" and turn off "Enable Bitcode".
+### Objective C - Native Integration
 
-2. Add frameworks to your project:
-	- CFNetwork.framework
-	- CoreTelephony.framework
-	- QuartzCore.framework
+1. Clone or download all the files
+
+2. Add all the files to your project
+
+3. Find "Build Settings" in your project and add -ObjC flag in section "Other Linker Flags" 
+ 
+4. Add frameworks to your project:
+	- CFNetwork.framework 
+	- AVFoundation.framework 
+	- CoreFoundation.framework 
+	- CoreMotion.framework 
+	- CoreVideo.framework 
+	- CoreMedia.framework 
+	- CoreTelephony.framework 
+	- QuartzCore.framework 
 	- SystemConfiguration.framework
-	- CoreFoundation.framework
-	- AssetsLibrary.framework
-	- Photos.framework
-	- CoreVideo.framework
-	- Security.framework
-	- CoreMedia.framework
-	- CoreMotion.framework
-	- AVFoundation.framework
-	- UIKit.framework
 
-3. Import nestlean header file in every place where you are going to use it.
-		#import "Nestlean.h"
+5. Add these keys in your info.plist file. (Related to the App Transport Security as of ios 9.0) They specify the exceptions needed for each domain so your app can successfully load the images for rewards
 
-4. Initialize Nestlean sdk in you AppDelegate's method application:didFinishLaunchingWithOptions
-		[Nestlean initWithApplicationKey: @”sdk_token”];
+```
+<key>NSAppTransportSecurity</key>
+<dict> 
+  <key>NSAllowsArbitraryLoads</key> <true/>
+</dict>
+```
 
+6. Import Nestlean header file in every place where you are going to use it. **#import “Nestlean.h”**
 
-#### Optional steps
-- Custom Events track specific actions that users take within your app [example: making a purchase, playing a video, or sharing on Twitter]. In order to track custom events, you need to call the method:
+7. Initialize Nestlean sdk in you AppDelegate's method **application:didFinishLaunchingWithOptions:**
 
-		[Nestlean event: @”event_name”];
+ ` [Nestlean initWithApplicationKey: @”sdk_token”] `
 
-- The second level in the Custom Event structure is the Event parameter [example: user is registered or anonymous]. In order to track custom events, you need to call the method:
-
-		[Nestlean event: @”event_name” data: @{"key":@"value"}];
-
-- Feedback Screen is used to save and track user feedback. To integrate Feedback Screen you need to call the method:
-
-		[Nestlean showFeedback]
-
-- By default all the screens that our SDK can parse are being submitted automatically. In order to add the screen manually, you need to call the method:
-
-		[Nestlean screen: @“screen_name”]
-
-## Author
+### Author
 
 Alex Bulgakov, alex@nestlean.com
