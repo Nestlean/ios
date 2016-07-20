@@ -105,7 +105,7 @@ pod "Nestlean"
 	
 	```
 	“Others Linker Flags” = “-ObjC” 
-	“Objective-C Bridging Header” = “$(SRCROOT)/<path_to_Nestlean_folder>/ Nestlean-Bridging-Header.h”
+	“Objective-C Bridging Header” = “$(SRCROOT)/<path_to_Nestlean_folder>/Nestlean-Bridging-Header.h”
 	```
 	
 4. Add frameworks to you project: 
