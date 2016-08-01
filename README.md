@@ -32,7 +32,7 @@ pod "Nestlean"
 
 3. Initialize Nestlean sdk in you AppDelegate's method **application:didFinishLaunchingWithOptions:**
 
- 	` [Nestlean initWithApplicationKey: @”sdk_token”] 
+ 	` [Nestlean initWithApplicationKey: @”sdk_token”] `
 
 ### Methods
 
