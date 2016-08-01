@@ -1,4 +1,4 @@
-# Nestlean SDK v1.1.0  
+# Nestlean SDK v1.1.1  
 _CocoaPods / Objective C Native / Swift Integrations_
 
 ---
@@ -16,6 +16,23 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "Nestlean"
 ```
+
+1. Add these keys in your info.plist file. (Related to the App Transport Security as of ios 9.0) They specify the exceptions needed for each domain so your app can successfully load the images for rewards
+
+	```
+	<key>NSAppTransportSecurity</key>
+	<dict> 
+  		<key>NSAllowsArbitraryLoads</key> <true/>
+	</dict>
+	```
+
+2. Import Nestlean header file in every place where you are going to use it. 
+ 
+	` #import “Nestlean.h” `
+
+3. Initialize Nestlean sdk in you AppDelegate's method **application:didFinishLaunchingWithOptions:**
+
+ 	` [Nestlean initWithApplicationKey: @”sdk_token”] 
 
 ### Methods
 
