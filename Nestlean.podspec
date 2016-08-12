@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name                    = "Nestlean"
-  s.version                 = "1.1.1"
+  s.version                 = "1.2.0"
   s.summary                 = "This SDK has been created to help iOS engineers to develop, distribute and test their apps"
   s.description             = <<-DESC
                   Nestlean is a web based platform that covers the mobile app development lifecycle from Sandbox to Production
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.author                  = { "Alex Bulgakov" => "alex@nestlean.com" }
   s.platform                = :ios, "7.0"
   s.ios.deployment_target   = "7.0"
-  s.source                  = { :git => "https://github.com/Nestlean/ios.git", :tag => "1.1.1"}
+  s.source                  = { :git => "https://github.com/Nestlean/ios.git", :tag => "1.2.0"}
   s.source_files            = "*.h"
   s.public_header_files     = "*.h"
   s.preserve_paths          = "libNestlean.a"

@@ -54,9 +54,6 @@ extern NSString* const kNestleanEnabledShakeGestureKey;
  *  @note If your build was installed from App Store this method will show feedback view as a +showFeedbackView.*/
 + (void)showMenu;
 
-/** @brief Show feedback view.*/
-+ (void)showFeedback;
-
 
 #pragma mark - Clear all datas
 /** @brief Remove nestlean SDK datas from memory.*/
