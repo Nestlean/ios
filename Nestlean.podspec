@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.author                  = { "Alex Bulgakov" => "alex@nestlean.com" }
   s.platform                = :ios, "7.0"
   s.ios.deployment_target   = "7.0"
-  s.source                  = { :git => "https://github.com/Nestlean/ios.git", :tag => "1.2.0"}
+  s.source                  = { :git => "https://github.com/Nestlean/ios.git", :tag => s.version.to_s }
   s.source_files            = "*.h"
   s.public_header_files     = "*.h"
   s.preserve_paths          = "libNestlean.a"
