@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name                    = "Nestlean"
-  s.version                 = "1.2.0"
+  s.version                 = "1.2.1"
   s.summary                 = "This SDK has been created to help iOS engineers to develop, distribute and test their apps"
   s.description             = <<-DESC
                   Nestlean is a web based platform that covers the mobile app development lifecycle from Sandbox to Production
